@@ -1,0 +1,10 @@
+Fixture -Concept in python
+you can use the fixture
+context to the test
+Similar - pre condition , post condition
+
+pre-condition: token, booking_id ---> Fixture
+ test_update_positive 1
+ test_update_negative 2
+
+# Setup and TearDown - pre and post condition
