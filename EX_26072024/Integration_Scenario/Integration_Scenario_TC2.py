@@ -132,7 +132,7 @@ def test_delete_booking_tc2():
               "cookie": cookies}
     print(header)
     response = requests.delete(url=DELETE_url, headers=header)
-    assert response.status_code == 201   # created- > deleted by id
+    assert response.status_code == 201  # created- > deleted by id
     # Verifying deleted booking id should not be exists
     responseData = requests.get(DELETE_url)
     assert responseData.status_code == 404  # 404 = Not Found
